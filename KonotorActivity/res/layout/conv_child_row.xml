@@ -12,15 +12,16 @@
         android:layout_margin="5dp"
         android:orientation="vertical"
         android:paddingBottom="10dp"
-        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
         android:paddingTop="0dp" >
 
         <ImageView
             android:id="@+id/contactimage"
+            android:layout_alignBottom="@+id/conv_child_container_messages"       
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginTop="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="4dp"
             android:src="@drawable/placeholder_profile" />
         <!-- android:visibility="invisible" -->
 
@@ -28,7 +29,7 @@
             android:id="@+id/conv_child_container_messages"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/contactimage"
+            android:layout_toLeftOf="@id/contactimage"
             android:background="@drawable/konotor_callout2x_alt"
             android:orientation="vertical" >
 
@@ -79,19 +80,7 @@
                     android:textColor="@color/light_gray" 
                     />
                 
-                <ImageView 
-                    android:id="@+id/upload_status"
-                    android:layout_width="15dp"
-                    android:layout_height="15dp"
-                    android:background="@color/voice_feedback_progress_end"
-                    android:layout_alignTop="@+id/message_m_time"
-                    android:layout_alignBottom="@+id/message_m_time"
-                    android:src="@drawable/upload"
-                    android:layout_alignParentLeft="true"
-                    android:layout_below="@+id/message_play_progress"
-                    android:contentDescription="@string/upload_status"/>
-
-                <!-- android:visibility="invisible" -->
+                
 
                 <com.demach.konotor.layout.MediaProgressBar
                     android:id="@+id/message_play_progress"
@@ -152,6 +141,18 @@
                 android:text="@string/a_very_long_message_text"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:textColor="#252525" />
+            
+            <ImageView 
+                    android:id="@+id/upload_status"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignTop="@+id/conv_child_container_messages"
+                    android:src="@drawable/konotor_upload"
+                    android:layout_alignParentRight="true"
+                    android:contentDescription="@string/upload_status"/>
+
+                <!-- android:visibility="invisible" -->
+            
         </RelativeLayout>
     </RelativeLayout>
 

@@ -35,8 +35,8 @@ public class K
         public static int voice_feedback_drawable = R.drawable.voice_feedback_drawable;
         public static int chat = R.drawable.chat;
         
-        public static int upload = R.drawable.upload;
-        public static int tick = R.drawable.tick;
+        public static int upload = R.drawable.konotor_upload;
+        public static int tick = R.drawable.konotor_tick;
     }
     public static final class id {
         public static int cancel_recording_bt=R.id.cancel_recording_bt;

@@ -12,7 +12,7 @@
         android:layout_margin="5dp"
         android:orientation="vertical"
         android:paddingBottom="10dp"
-        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
         android:paddingTop="5dp" >
         <!-- android:visibility="invisible" -->
 
@@ -20,7 +20,7 @@
             android:id="@+id/conv_child_container_messages"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_toLeftOf="@id/contactimage"
+            android:layout_toRightOf="@id/contactimage"
             android:background="@drawable/konotor_callout2x_alt"
             android:orientation="vertical" >
 
@@ -150,9 +150,9 @@
             android:id="@+id/contactimage"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_alignBottom="@+id/conv_child_container_messages"
-            android:layout_alignParentRight="true"
-            android:layout_marginBottom="4dp"
+            android:layout_alignTop="@+id/conv_child_container_messages"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="8dp"
             android:src="@drawable/support_image" />
 
     </RelativeLayout>
