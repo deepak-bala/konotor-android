@@ -1,30 +1,30 @@
 <resources>
 
-    <string name="app_name">KonotorActivity</string>
-    <string name="compose_new_message">Text message</string>
-	<string name="go_back">Go back</string>
-	<string name="toggle_speaker">Toggle speaker</string>
-	<string name="response_with_voice">Response with voice</string>
-	<string name="send_message">Send message</string>
-	<string name="you">You</string>
-	<string name="time">Time</string>
-	<string name="duration">Duration</string>
-	<string name="a_very_long_message_text">A long text message from someone :)</string>
-	<string name="downloading">Downloading...</string>
-	<string name="recording">Recording</string>
-	<string name="_00">00</string>
-	<string name="conv_id">c_id</string>
-	<string name="no_network_connection_toast">No network connection found</string>
+    <string name="konotor_app_name">KonotorActivity</string>
+    <string name="konotor_compose_new_message">Text message</string>
+	<string name="konotor_go_back">Go back</string>
+	<string name="konotor_toggle_speaker">Toggle speaker</string>
+	<string name="konotor_response_with_voice">Response with voice</string>
+	<string name="konotor_send_message">Send message</string>
+	<string name="konotor_you">You</string>
+	<string name="konotor_time">Time</string>
+	<string name="konotor_duration">Duration</string>
+	<string name="konotor_a_very_long_message_text">A long text message from someone :)</string>
+	<string name="konotor_downloading">Downloading...</string>
+	<string name="konotor_recording">Recording</string>
+	<string name="konotor_00">00</string>
+	<string name="konotor_conv_id">c_id</string>
+	<string name="konotor_no_network_connection_toast">No network connection found</string>
 		
-	<color name="white">#FFFFFF</color>
-	<color name="light_gray">#707070</color>
-	<color name="progress_start">#5eccff</color>
-	<color name="progress_end">#73c5eb</color>
-	<color name="voice_feedback_progress_start">#6BAAD5</color>
-	<color name="voice_feedback_progress_end">#55A3D9</color>
-	<color name="message_read">#FFFFFF</color>
-	<string name="what_is_your_name">What is your name ?</string>
-	<string name="john_doe">John Doe</string>
-	<string name="upload_status">upload_status</string>
+	<color name="konotor_white">#FFFFFF</color>
+	<color name="konotor_light_gray">#707070</color>
+	<color name="konotor_progress_start">#5eccff</color>
+	<color name="konotor_progress_end">#73c5eb</color>
+	<color name="konotor_voice_feedback_progress_start">#6BAAD5</color>
+	<color name="konotor_voice_feedback_progress_end">#55A3D9</color>
+	<color name="konotor_message_read">#FFFFFF</color>
+	<string name="konotor_what_is_your_name">What is your name ?</string>
+	<string name="konotor_john_doe">John Doe</string>
+	<string name="konotor_upload_status">upload_status</string>
     
 </resources>

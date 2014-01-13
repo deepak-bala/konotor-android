@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@android:color/white"
+    android:keepScreenOn="true"
+    >
+
+    
+
+
+    <RelativeLayout
+        android:id="@+id/konotor_cancel_relative_layout"
+        android:background="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp" >
+        
+        <TextView
+        android:id="@+id/konotor_textView1"
+        android:textColor="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/konotor_recording" />
+
+        <ImageView
+            android:background="@drawable/konotor_voice_overlay_sendbg"
+            android:id="@+id/konotor_v_send_bt"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/konotor_send2x" />
+
+        <ImageView
+            android:background="@drawable/konotor_voice_overlay_cancelbg"
+            android:id="@+id/konotor_cancel_recording_bt"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/konotor_cancel2x" />
+
+
+        <ProgressBar
+            android:id="@+id/konotor_voice_feedback_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="19dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/konotor_v_send_bt"
+            android:layout_toRightOf="@+id/konotor_cancel_recording_bt" 
+            android:progressDrawable="@drawable/konotor_voice_feedback_drawable"
+            />
+
+        <TextView
+            android:id="@+id/konotor_time_elapsed"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/konotor_voice_feedback_progress"
+            android:layout_centerHorizontal="true"
+            android:text="@string/konotor_00"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

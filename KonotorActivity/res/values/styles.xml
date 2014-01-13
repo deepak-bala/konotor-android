@@ -18,7 +18,7 @@
     </style>
     
     <style name="HoloLightEditText">
-    	<item name="android:background">@drawable/edit_text_holo_light</item>
+    	<item name="android:background">@drawable/konotor_edit_text_holo_light</item>
 	</style>
 
 </resources>

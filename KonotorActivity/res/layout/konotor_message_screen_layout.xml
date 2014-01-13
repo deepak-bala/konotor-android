@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.demach.konotor.layout.MessageRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/konotor_white"
+	>
+    <ListView
+        android:id="@+id/konotor_conversation_haed_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/konotor_relative_layout_reply"
+        android:layout_below="@+id/konotor_nav_m_relative_layout"
+        android:transcriptMode="alwaysScroll" 
+        android:divider="#FFFFFF"
+    	android:dividerHeight="0dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/konotor_nav_m_relative_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/konotor_nav_100" >
+
+            <ImageView
+        android:id="@+id/konotor_message_back_bt"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/konotor_nav_prev" 
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/konotor_go_back"/>
+
+
+    <TextView
+        android:id="@+id/konotor_conv_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/konotor_speakerToggle_img"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/konotor_message_back_bt"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/konotor_white"
+        android:textStyle="bold" />
+    
+        <ImageView
+        android:id="@+id/konotor_speakerToggle_img"
+        android:layout_width="27dp"
+        android:layout_height="22dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/konotor_speakeron" 
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/konotor_toggle_speaker"/>
+        
+    </RelativeLayout>
+    
+
+
+<!--     <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_above="@+id/conversation_haed_list"
+        android:layout_alignParentLeft="true"
+        android:background="@color/light_gray" /> -->
+
+    <RelativeLayout
+        android:id="@+id/konotor_relative_layout_reply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/konotor_conversation_haed_list"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/konotor_conversation_haed_list" 
+        android:background="@color/konotor_white"
+        >
+
+
+
+        <RelativeLayout
+            android:id="@+id/konotor_relative_layout_reply_inner"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_margin="8dp"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/konotor_m_message_reply_text_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/konotor_m_message_reply_voice_bt"
+                android:ems="10"
+                android:hint="@string/konotor_compose_new_message"
+                android:inputType="textMultiLine" 
+                android:layout_marginRight="7dp"
+                android:textColor="@android:color/black"
+                style="@style/HoloLightEditText"
+                />
+
+            <ImageView
+                android:id="@+id/konotor_m_message_reply_voice_bt"
+                android:background="@drawable/konotor_voice_overlay_recordbg"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/konotor_mic2x" 
+                android:contentDescription="@string/konotor_response_with_voice"
+                android:visibility="visible"
+                />
+            
+            <ImageView
+                android:id="@+id/konotor_m_message_send_bt"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/konotor_voice_overlay_sendbg"
+                android:src="@drawable/konotor_send2x"
+                android:contentDescription="@string/konotor_send_message"
+                android:visibility="invisible"
+                />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/konotor_light_gray" />
+
+
+
+    </RelativeLayout>
+
+</com.demach.konotor.layout.MessageRelativeLayout>
