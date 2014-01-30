@@ -53,7 +53,7 @@
                     android:layout_alignParentTop="true"
                     android:paddingTop="5dp"
                     android:singleLine="true"
-                    android:text="@string/konotor_you"
+                    android:text="@string/konotor_support"
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:textColor="@color/konotor_light_gray"
                     android:textStyle="bold" />

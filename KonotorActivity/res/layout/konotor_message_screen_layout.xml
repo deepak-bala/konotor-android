@@ -35,7 +35,7 @@
         android:contentDescription="@string/konotor_go_back"/>
 
 
-    <TextView
+    <com.demach.konotor.view.KonotorTextView
         android:id="@+id/konotor_conv_heading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
