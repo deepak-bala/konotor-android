@@ -23,6 +23,9 @@
     	<activity android:name="com.demach.konotor.KonotorFeedbackActivity"
     	    android:screenOrientation="portrait"
     	    ></activity>
+    	<activity android:name="com.demach.konotor.KonotorPhotoViewActivity"
+    	    android:screenOrientation="portrait"
+    	    ></activity>    	
     	<service android:name=".konotor.service.KonotorService"></service>
     	<service android:name=".konotor.service.KonotorBacklogService"></service>
     	<receiver android:name=".konotor.KonotorAlarmReceiver"></receiver>

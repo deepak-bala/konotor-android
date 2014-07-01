@@ -144,6 +144,30 @@
                 android:text="@string/konotor_a_very_long_message_text"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:textColor="#252525" />
+            
+            <RelativeLayout
+    		    android:id="@+id/konotor_photo_rel_container"
+   		        android:layout_width="wrap_content"
+   			    android:layout_height="wrap_content"
+  		        android:layout_below="@+id/konotor_relative_m_inner_layout"
+  		        android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+        		android:layout_centerHorizontal="true"
+        		android:paddingBottom="8dp"
+        		android:paddingTop="8dp"
+        		android:visibility="gone" >
+
+        		<ImageView
+            		android:id="@+id/konotor_photo_imageview"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+           		 	android:layout_centerHorizontal="true"
+            		android:adjustViewBounds="true"
+            		android:background="@android:color/white"
+            		android:maxHeight="200dp"
+            		android:maxWidth="260dp"
+            		android:visibility="gone" />
+    		</RelativeLayout>
         </RelativeLayout>
 
         <ImageView
@@ -180,25 +204,6 @@
             android:visibility="gone" />
     </RelativeLayout>
 
-    <RelativeLayout
-        android:id="@+id/konotor_photo_rel_container"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/konotor_conv_child_container"
-        android:layout_centerHorizontal="true"
-        android:paddingBottom="15dp"
-        android:visibility="gone" >
-
-        <ImageView
-            android:id="@+id/konotor_photo_imageview"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:adjustViewBounds="true"
-            android:background="@android:color/white"
-            android:maxHeight="200dp"
-            android:maxWidth="280dp"
-            android:visibility="gone" />
-    </RelativeLayout>
+    
 
 </RelativeLayout>
