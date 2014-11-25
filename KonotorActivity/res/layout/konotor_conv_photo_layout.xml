@@ -11,7 +11,7 @@
         android:layout_height="50dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:background="@drawable/konotor_nav_100" >
+        android:background="@color/konotor_theme_color" >
 
             <ImageView
         android:id="@+id/konotor_message_p_back_bt"

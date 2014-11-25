@@ -37,8 +37,8 @@
             <corners
                 android:radius="5dip" />
             <gradient
-                android:startColor="@color/konotor_progress_start"
-                android:endColor="@color/konotor_progress_end"
+                android:startColor="@color/konotor_theme_color"
+                android:endColor="@color/konotor_theme_color"
                 android:angle="270" />
         </shape>
     </clip>
