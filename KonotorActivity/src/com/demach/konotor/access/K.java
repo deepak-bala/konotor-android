@@ -14,6 +14,7 @@ public class K
         public static int voice_feedback_progress_start=R.color.konotor_voice_feedback_progress_start;
         public static int white= R.color.konotor_white;
         public static int message_read= R.color.konotor_message_read;
+        public static int theme_color=R.color.konotor_theme_color;
     }
     public static final class drawable {
         public static int empty_photo=R.drawable.konotor_empty_photo;
@@ -42,6 +43,15 @@ public class K
         public static int arrow_up=R.drawable.konotor_arrow_up;
         public static int camera_light=R.drawable.konotor_camera_light;
         public static int content_picture=R.drawable.konotor_img;
+ 
+/* ThemeColor related - Commented to work on later - to use withThemeColor option for customizing Konotor color
+        
+        public static int voiceButton=R.drawable.konotor_voice_overlay_recordbg;
+        public static int sendButton = R.drawable.konotor_voice_overlay_sendbg;
+        public static int cancelButton = R.drawable.konotor_voice_overlay_cancelbg;
+        public static int progressBar = R.drawable.konotor_voice_feedback_drawable;
+        
+        */
         
         
     }
@@ -83,6 +93,7 @@ public class K
         public static int message_subject_text=R.id.konotor_message_subject_text;
         public static int upload_status = R.id.konotor_upload_status;
         
+        
         //added for Picture messages
         public static int iv_icon=R.id.konotor_iv_icon;
         public static int pic_selection_image=R.id.konotor_pic_selection_image;
@@ -98,6 +109,9 @@ public class K
         public static int arrow_down=R.id.konotor_arrow_down;
         public static int photo_view=R.id.konotor_photo_view;
         public static int message_p_back_bt=R.id.konotor_message_p_back_bt;
+                
+        public static int nav_p_relative_loyout= R.id.konotor_nav_p_relative_layout;
+        
 
     }
     public static final class layout {
