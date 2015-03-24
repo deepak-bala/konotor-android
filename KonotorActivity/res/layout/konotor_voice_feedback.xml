@@ -32,15 +32,20 @@
             android:id="@+id/konotor_v_send_bt"
             android:layout_width="44dp"
             android:layout_height="44dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="4dp"
+           
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:src="@drawable/konotor_send2x" />
+            android:src="@drawable/konotor_send2x_white" />
 
         <ImageView
             android:background="@drawable/konotor_voice_overlay_cancelbg"
             android:id="@+id/konotor_cancel_recording_bt"
             android:layout_width="44dp"
             android:layout_height="44dp"
+            android:padding="4dp"
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
             android:src="@drawable/konotor_cancel2x" />
