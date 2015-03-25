@@ -2,26 +2,26 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/konotor_unread_background_drawable"
+    android:background="@color/konotor_chat_bgcolor"
     android:orientation="vertical" >
 
     <RelativeLayout
         android:id="@+id/konotor_conv_child_container"
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
         android:orientation="vertical"
-        android:paddingBottom="10dp"
+        android:paddingBottom="5dp"
         android:paddingRight="20dp"
-        android:paddingTop="5dp" >
+        android:paddingTop="0dp" >
         <!-- android:visibility="invisible" -->
 
         <RelativeLayout
             android:id="@+id/konotor_conv_child_container_messages"
-            android:layout_width="fill_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@id/konotor_contactimage"
-            android:background="@drawable/konotor_callout2x_alt"
+            android:background="@drawable/chat_other"
             android:orientation="vertical" >
 
             <ImageView
@@ -31,6 +31,7 @@
                 android:layout_alignParentRight="true"
                 android:layout_marginRight="5dp"
                 android:layout_marginTop="10dp"
+                android:visibility="gone"
                 android:background="@drawable/konotor_voice_overlay_recordbg"
                 android:src="@drawable/konotor_play2x" />
 
@@ -49,39 +50,29 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
-                    android:layout_alignParentRight="true"
                     android:layout_alignParentTop="true"
                     android:paddingTop="5dp"
                     android:singleLine="true"
+                    android:visibility="gone"
                     android:text="@string/konotor_support"
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:textColor="@color/konotor_light_gray"
                     android:textStyle="bold" />
 
-                <com.demach.konotor.view.KonotorTextView
-                    android:id="@+id/konotor_message_m_time"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/konotor_message_play_progress"
-                    android:layout_toRightOf="@+id/konotor_upload_status"
-                    android:ellipsize="end"
-                    android:singleLine="true"
-                    android:text="@string/konotor_time"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:textColor="@color/konotor_light_gray" 
-                    />
                 
                 <ImageView 
                     android:id="@+id/konotor_upload_status"
                     android:layout_width="15dp"
                     android:layout_height="15dp"
                     android:background="@color/konotor_voice_feedback_progress_end"
-                    android:layout_alignTop="@+id/konotor_message_m_time"
-                    android:layout_alignBottom="@+id/konotor_message_m_time"
+                    android:layout_alignTop="@+id/konotor_user_m_name"
+                    android:layout_alignBottom="@+id/konotor_user_m_name"
+                    android:visibility="gone"
                     android:src="@drawable/konotor_upload"
                     android:layout_alignParentLeft="true"
                     android:layout_below="@+id/konotor_message_play_progress"
                     android:contentDescription="@string/konotor_upload_status"/>
+               
 
                 <!-- android:visibility="invisible" -->
 
@@ -97,6 +88,7 @@
                     android:padding="0dp"
                     android:progressDrawable="@drawable/konotor_seek_drawable"
                     android:secondaryProgress="0"
+                    android:visibility="gone"
                     android:thumb="@drawable/konotor_seekbar_thumb_small"
                     android:thumbOffset="9999dp" />
 
@@ -109,6 +101,7 @@
                     android:layout_marginLeft="5dp"
                     android:text="@string/konotor_duration"
                     android:textAppearance="?android:attr/textAppearanceSmall"
+    				android:visibility="gone"     
                     android:textColor="@color/konotor_light_gray" />
 
                 <com.demach.konotor.view.KonotorTextView
@@ -131,29 +124,36 @@
                     android:indeterminate="true"
                     android:visibility="gone" />
             </RelativeLayout>
-
+		<LinearLayout 
+		    android:layout_below="@id/konotor_relative_m_inner_layout"
+		    android:orientation="vertical"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:paddingTop="2dp"
+		    android:paddingBottom="2dp"
+		    >
             <com.demach.konotor.view.KonotorTextView
                 android:id="@+id/konotor_messageText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_below="@+id/konotor_relative_m_inner_layout"
                 android:gravity="center_vertical"
+                android:layout_gravity="left"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:text="@string/konotor_a_very_long_message_text"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:textColor="#252525" />
             
+            
+            
             <RelativeLayout
     		    android:id="@+id/konotor_photo_rel_container"
    		        android:layout_width="wrap_content"
    			    android:layout_height="wrap_content"
-  		        android:layout_below="@+id/konotor_relative_m_inner_layout"
   		        android:paddingLeft="10dp"
                 android:paddingRight="10dp"
-        		android:layout_centerHorizontal="true"
-        		android:paddingBottom="8dp"
+                android:layout_gravity="center"
+        		android:paddingBottom="2dp"
         		android:paddingTop="8dp"
         		android:visibility="gone" >
 
@@ -168,23 +168,66 @@
             		android:maxWidth="260dp"
             		android:visibility="gone" />
     		</RelativeLayout>
+    		
+            <com.demach.konotor.view.KonotorTextView
+                    android:id="@+id/konotor_dl_button"
+                    android:background="@color/konotor_chat_bgcolor"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:maxWidth="100dp"
+                    android:layout_gravity="center"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/konotor_go"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:visibility="gone"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/konotor_light_gray" 
+                    />
+    		
+            <com.demach.konotor.view.KonotorTextView
+                    android:id="@+id/konotor_message_m_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/konotor_time"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/konotor_light_gray" 
+                    />
+            </LinearLayout>
+            
         </RelativeLayout>
 
         <ImageView
             android:id="@+id/konotor_contactimage"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_alignTop="@+id/konotor_conv_child_container_messages"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:paddingRight="4dp"
             android:layout_alignParentLeft="true"
-            android:layout_marginTop="8dp"
-            android:src="@drawable/konotor_support_image" />
+            android:layout_alignTop="@+id/konotor_conv_child_container_messages"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/konotor_support_image"
+            android:visibility="gone" />
 
     </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/konotor_sticker_rel_container"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_below="@+id/konotor_conv_child_container"
         android:layout_centerHorizontal="true"
         android:paddingBottom="15dp"

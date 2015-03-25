@@ -2,25 +2,25 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"     
+    android:orientation="vertical"   
+    android:background="@color/konotor_chat_bgcolor"  
     >    
     
     <RelativeLayout
         android:id="@+id/konotor_nav_p_relative_layout"
         android:layout_width="wrap_content"
-        android:layout_height="50dp"
+        android:layout_height="56dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:background="@color/konotor_theme_color" >
 
             <ImageView
         android:id="@+id/konotor_message_p_back_bt"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_alignParentTop="true"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_centerVertical="true"
         android:src="@drawable/konotor_nav_prev" 
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_margin="18dp"
         />
 
     </RelativeLayout>

@@ -3,36 +3,37 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/konotor_white"
+    android:background="@color/konotor_chat_bgcolor"
 	>
+
     <ListView
         android:id="@+id/konotor_conversation_haed_list"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/konotor_relative_layout_reply"
         android:layout_below="@+id/konotor_nav_m_relative_layout"
-        android:transcriptMode="alwaysScroll" 
+        android:background="@color/konotor_chat_bgcolor"
         android:divider="#FFFFFF"
-    	android:dividerHeight="0dp"
-        />
+        android:dividerHeight="0dp"
+        android:transcriptMode="alwaysScroll" />
 
     <RelativeLayout
         android:id="@+id/konotor_nav_m_relative_layout"
         android:layout_width="wrap_content"
-        android:layout_height="50dp"
+        android:layout_height="56dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:background="@color/konotor_theme_color" >
 
             <ImageView
         android:id="@+id/konotor_message_back_bt"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_alignParentTop="true"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_margin="20dp"        
+        android:layout_centerVertical="true"
         android:src="@drawable/konotor_nav_prev" 
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        android:contentDescription="@string/konotor_go_back"/>
+        android:contentDescription="@string/konotor_go_back"
+        />
 
 
     <com.demach.konotor.view.KonotorTextView
@@ -48,6 +49,7 @@
         android:text=""
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="@color/konotor_white"
+        android:textSize="20sp"
         android:textStyle="bold" />
     
         <ImageView
@@ -55,11 +57,10 @@
         android:layout_width="27dp"
         android:layout_height="22dp"
         android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
         android:src="@drawable/konotor_speakeron" 
-        android:layout_marginTop="12dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_margin="18dp"
+  
         android:contentDescription="@string/konotor_toggle_speaker"/>
         
     </RelativeLayout>
@@ -88,30 +89,33 @@
         <RelativeLayout
             android:id="@+id/konotor_relative_layout_reply_inner"
             android:layout_width="match_parent"
-            android:layout_height="65dp"
-            android:layout_margin="8dp"
+            android:layout_height="54dp"
+            android:layout_margin="0dp"
             android:orientation="vertical" >
 
             <EditText
                 android:id="@+id/konotor_m_message_reply_text_bt"
                 android:layout_width="fill_parent"
-                android:layout_height="60dp"
+                android:layout_height="54dp"
                 android:layout_centerVertical="true"
                 android:layout_toLeftOf="@+id/konotor_m_message_reply_voice_bt"
                 android:layout_toRightOf="@+id/konotor_m_message_reply_pic"
                 android:ems="10"
+                android:textSize="18sp"
                 android:hint="@string/konotor_compose_new_message"
                 android:inputType="textMultiLine" 
-                android:layout_marginRight="7dp"
-                android:layout_marginLeft="6dp"
-                android:textColor="@android:color/black"
-                style="@style/HoloLightEditText"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="16dp"
+                android:textColor="#252525"
+                android:background="@color/konotor_white"
                 />
             
              <ImageView
                 android:id="@+id/konotor_m_message_reply_pic"
                 android:layout_width="44dp"
                 android:layout_height="44dp"
+                android:layout_margin="8dp"
                 android:layout_centerVertical="true"
                 android:layout_alignParentLeft="true"
                 android:src="@drawable/konotor_camera" 
@@ -124,6 +128,7 @@
                 android:layout_width="44dp"
                 android:layout_height="44dp"
                 android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
                 android:layout_centerVertical="true"
                 android:src="@drawable/konotor_mic2x" 
                 android:contentDescription="@string/konotor_response_with_voice"
@@ -132,14 +137,14 @@
             
             <ImageView
                 android:id="@+id/konotor_m_message_send_bt"
-                android:layout_width="44dp"
-                android:layout_height="44dp"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_margin="6dp"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
-                android:background="@drawable/konotor_voice_overlay_sendbg"
                 android:src="@drawable/konotor_send2x"
                 android:contentDescription="@string/konotor_send_message"
-                android:visibility="invisible"
+                android:visibility="gone"
                 />
 
         </RelativeLayout>
@@ -149,7 +154,7 @@
             android:layout_height="1dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:background="@color/konotor_light_gray" />
+            android:background="#D0D0D0" />
 
 
 

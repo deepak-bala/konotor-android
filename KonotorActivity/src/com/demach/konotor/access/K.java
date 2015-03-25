@@ -92,6 +92,7 @@ public class K
         public static int voice_feedback_progress=R.id.konotor_voice_feedback_progress;
         public static int message_subject_text=R.id.konotor_message_subject_text;
         public static int upload_status = R.id.konotor_upload_status;
+        public static int message_link = R.id.konotor_dl_button;
         
         
         //added for Picture messages

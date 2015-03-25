@@ -1,7 +1,7 @@
 <resources>
 
     <string name="konotor_app_name">KonotorActivity</string>
-    <string name="konotor_compose_new_message">Text message</string>
+    <string name="konotor_compose_new_message">Type something...</string>
 	<string name="konotor_go_back">Go back</string>
 	<string name="konotor_toggle_speaker">Toggle speaker</string>
 	<string name="konotor_response_with_voice">Response with voice</string>
@@ -19,14 +19,17 @@
 		
 	<color name="konotor_white">#FFFFFF</color>
 	<color name="konotor_light_gray">#707070</color>
+	<color name="konotor_chat_bgcolor">#F0F0F0</color>
 	<color name="konotor_progress_start">#5eccff</color>
 	<color name="konotor_progress_end">#73c5eb</color>
 	<color name="konotor_voice_feedback_progress_start">#6BAAD5</color>
 	<color name="konotor_voice_feedback_progress_end">#55A3D9</color>
 	<color name="konotor_theme_color">#34495E</color>
-	<color name="konotor_message_read">#FFFFFF</color>
+	<color name="konotor_message_read">#F0F0F0</color>
 	<string name="konotor_what_is_your_name">What is your name ?</string>
 	<string name="konotor_john_doe">John Doe</string>
 	<string name="konotor_upload_status">upload_status</string>
+	<string name="konotor_go">View</string>
+	
     
 </resources>
