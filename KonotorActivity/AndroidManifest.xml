@@ -26,10 +26,10 @@
     	<activity android:name="com.demach.konotor.KonotorPhotoViewActivity"
     	    android:screenOrientation="portrait"
     	    ></activity>    	
-    	<service android:name=".konotor.service.KonotorService"></service>
-    	<service android:name=".konotor.service.KonotorBacklogService"></service>
-    	<receiver android:name=".konotor.KonotorAlarmReceiver"></receiver>
-    	<receiver android:name=".konotor.NetworkStateReceiver">
+	    	<service android:name="com.demach.konotor.service.KonotorService"></service>
+	    	<service android:name="com.demach.konotor.service.KonotorBacklogService"></service>
+	    	<receiver android:name="com.demach.konotor.KonotorAlarmReceiver"></receiver>
+	    	<receiver android:name="com.demach.konotor.NetworkStateReceiver">
     	    <intent-filter>
                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
             </intent-filter>
