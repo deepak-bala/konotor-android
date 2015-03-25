@@ -53,7 +53,7 @@
                     android:layout_alignParentTop="true"
                     android:paddingTop="5dp"
                     android:singleLine="true"
-                    android:visibility="gone"
+                    android:visibility="visible"
                     android:text="@string/konotor_support"
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:textColor="@color/konotor_light_gray"
@@ -220,7 +220,7 @@
             android:layout_alignTop="@+id/konotor_conv_child_container_messages"
             android:layout_marginTop="0dp"
             android:src="@drawable/konotor_support_image"
-            android:visibility="gone" />
+            android:visibility="visible" />
 
     </RelativeLayout>
 
