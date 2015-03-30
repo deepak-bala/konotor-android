@@ -24,7 +24,7 @@
 	<color name="konotor_progress_end">#73c5eb</color>
 	<color name="konotor_voice_feedback_progress_start">#6BAAD5</color>
 	<color name="konotor_voice_feedback_progress_end">#55A3D9</color>
-	<color name="konotor_theme_color">#34495E</color>
+	<color name="konotor_theme_color">#505050</color>
 	<color name="konotor_message_read">#F0F0F0</color>
 	<string name="konotor_what_is_your_name">What is your name ?</string>
 	<string name="konotor_john_doe">John Doe</string>

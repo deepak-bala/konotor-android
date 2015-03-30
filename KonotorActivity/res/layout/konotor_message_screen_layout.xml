@@ -79,7 +79,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/konotor_conversation_haed_list"
-        android:layout_alignParentBottom="true"
+        android:layout_above="@+id/konotor_poweredby"
+        android:layout_alignWithParentIfMissing="true"
         android:layout_alignRight="@+id/konotor_conversation_haed_list" 
         android:background="@color/konotor_white"
         >
@@ -156,8 +157,22 @@
             android:layout_alignParentTop="true"
             android:background="#D0D0D0" />
 
-
+  		
 
     </RelativeLayout>
+    <com.demach.konotor.view.KonotorTextView
+                android:id="@+id/konotor_poweredby"
+                android:layout_width="fill_parent"
+                android:layout_height="16dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentBottom="true"
+                android:ems="10"
+                android:textSize="12sp"
+                android:text="powered by konotor"
+                android:gravity="center"
+                android:visibility="visible"
+                android:textColor="#F5F5F5"
+                android:background="#000000"
+                />
 
 </com.demach.konotor.layout.MessageRelativeLayout>
