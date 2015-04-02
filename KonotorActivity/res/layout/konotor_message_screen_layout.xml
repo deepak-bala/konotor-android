@@ -106,6 +106,7 @@
                 android:ems="10"
                 android:textSize="18sp"
                 android:hint="@string/konotor_compose_new_message"
+                android:textColorHint="#606060"
                 android:inputType="textMultiLine" 
                 android:layout_marginRight="8dp"
                 android:layout_marginLeft="8dp"
