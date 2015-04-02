@@ -90,14 +90,16 @@
         <RelativeLayout
             android:id="@+id/konotor_relative_layout_reply_inner"
             android:layout_width="match_parent"
-            android:layout_height="54dp"
+            android:layout_height="wrap_content"
             android:layout_margin="0dp"
             android:orientation="vertical" >
 
             <EditText
                 android:id="@+id/konotor_m_message_reply_text_bt"
                 android:layout_width="fill_parent"
-                android:layout_height="54dp"
+                android:layout_height="wrap_content"
+                android:minHeight="52dp"
+                android:maxLines="4"
                 android:layout_centerVertical="true"
                 android:layout_toLeftOf="@+id/konotor_m_message_reply_voice_bt"
                 android:layout_toRightOf="@+id/konotor_m_message_reply_pic"
