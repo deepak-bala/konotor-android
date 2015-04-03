@@ -27,9 +27,10 @@
 
             <ImageView
         android:id="@+id/konotor_message_back_bt"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:layout_margin="20dp"        
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_margin="0dp" 
+        android:padding="19dp"   
         android:layout_centerVertical="true"
         android:src="@drawable/konotor_nav_prev" 
         android:contentDescription="@string/konotor_go_back"
