@@ -131,20 +131,7 @@
 		    android:layout_height="wrap_content"
 		    android:paddingTop="2dp"
 		    android:paddingBottom="2dp"
-		    >
-            <com.demach.konotor.view.KonotorTextView
-                android:id="@+id/konotor_messageText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:layout_gravity="left"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:text="@string/konotor_a_very_long_message_text"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:textColor="#252525" />
-            
-            
+		    > 
             
             <RelativeLayout
     		    android:id="@+id/konotor_photo_rel_container"
@@ -168,6 +155,18 @@
             		android:maxWidth="260dp"
             		android:visibility="gone" />
     		</RelativeLayout>
+    		
+            <com.demach.konotor.view.KonotorTextView
+                android:id="@+id/konotor_messageText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_gravity="left"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/konotor_a_very_long_message_text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#252525" />
     		
             <com.demach.konotor.view.KonotorTextView
                     android:id="@+id/konotor_dl_button"
