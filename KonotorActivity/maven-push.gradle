@@ -1,0 +1,73 @@
+group = "com.konotor"
+version = "3.0.12-SNAPSHOT"
+
+
+apply plugin: 'maven'
+apply plugin: 'signing'
+
+afterEvaluate { project ->
+    uploadArchives {
+        repositories {
+            mavenDeployer {
+                beforeDeployment { MavenDeployment deployment -> signing.signPom(deployment) }
+
+                repository(url: "https://oss.sonatype.org/service/local/staging/deploy/maven2/") {
+                    authentication(userName: ossrhUsername, password: ossrhPassword)
+                }
+
+                snapshotRepository(url: "https://oss.sonatype.org/content/repositories/snapshots/") {
+                    authentication(userName: ossrhUsername, password: ossrhPassword)
+                }
+
+                pom.project {
+                    name 'Konotor Android SDK'
+                    packaging 'aar'
+                    description 'SDK to integrate Konotor in your Android app.'
+                    url 'http://www.konotor.com'
+
+                    scm {
+                        connection 'https://github.com/deepak-bala/konotor-android/'
+                        developerConnection 'https://github.com/deepak-bala/konotor-android/'
+                        url 'https://github.com/deepak-bala/konotor-android/'
+                    }
+
+                    licenses {
+                        license {
+                            name 'Proprietary'
+                        }
+                    }
+
+                    developers {
+                        developer {
+                            id 'srikrishnan-ganesan'
+                            name 'Srikrishnan'
+                            email 'sri@konotor.com'
+                        }
+                    }
+                }
+                pom.whenConfigured { pom ->
+                    pom.dependencies.clear()
+                }
+            }
+        }
+    }
+
+    task copySources(type: Copy) {
+        assembleRelease.dependsOn copySources
+        description 'Copies over the existing javadocs and sources to output'
+        from '../docs'
+        into 'build/libs'
+        rename 'VERSION', version
+    }
+
+    artifacts {
+        archives file("build/libs/KonotorActivity-${version}-sources.jar")
+        archives file("build/libs/KonotorActivity-${version}-javadoc.jar")
+    }
+
+    signing {
+        sign configurations.archives
+    }
+
+    uploadArchives.dependsOn copySources
+}
