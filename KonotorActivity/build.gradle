@@ -46,3 +46,5 @@ android {
         release.setRoot('build-types/release')
     }
 }
+
+apply from: 'maven-push.gradle'
