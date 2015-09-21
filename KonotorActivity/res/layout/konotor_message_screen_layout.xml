@@ -15,7 +15,7 @@
         android:background="@color/konotor_chat_bgcolor"
         android:divider="#FFFFFF"
         android:dividerHeight="0dp"
-        android:transcriptMode="alwaysScroll" />
+        android:transcriptMode="normal" />
 
     <RelativeLayout
         android:id="@+id/konotor_nav_m_relative_layout"
