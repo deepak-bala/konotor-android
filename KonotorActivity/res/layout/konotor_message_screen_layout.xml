@@ -15,7 +15,21 @@
         android:background="@color/konotor_chat_bgcolor"
         android:divider="#FFFFFF"
         android:dividerHeight="0dp"
+        android:clipToPadding="false"
         android:transcriptMode="normal" />
+    
+    <com.demach.konotor.view.KonotorTextView
+       android:id="@+id/konotor_announcement_overlay"
+       android:layout_width="fill_parent"
+       android:layout_height="@dimen/konotor_overlay_height"
+       android:layout_alignParentLeft="true"
+       android:layout_alignTop="@id/konotor_conversation_haed_list"
+       android:gravity="center"
+       android:background="@color/konotor_overlay_color"
+       android:textAppearance="?android:attr/textAppearanceMedium"
+       android:visibility="gone"
+       android:textSize="14sp"  
+       android:textColor="@color/konotor_white" />
 
     <RelativeLayout
         android:id="@+id/konotor_nav_m_relative_layout"
