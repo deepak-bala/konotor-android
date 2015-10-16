@@ -1,5 +1,5 @@
 group = "com.konotor"
-version = "3.0.16-SNAPSHOT"
+version = "3.0.18-SNAPSHOT"
 
 
 apply plugin: 'maven'
