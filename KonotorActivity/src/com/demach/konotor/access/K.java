@@ -93,7 +93,7 @@ public class K
         public static int message_subject_text=R.id.konotor_message_subject_text;
         public static int upload_status = R.id.konotor_upload_status;
         public static int message_link = R.id.konotor_dl_button;
-        
+        public static int announcement_overlay=R.id.konotor_announcement_overlay;
         
         //added for Picture messages
         public static int iv_icon=R.id.konotor_iv_icon;
@@ -148,6 +148,7 @@ public class K
         public static int time=R.string.konotor_time;
         public static int toggle_speaker=R.string.konotor_toggle_speaker;
         public static int you=R.string.konotor_you;
+        public static int overlay_layout_height=R.dimen.konotor_overlay_height;
     }
     public static final class style {
         /** 

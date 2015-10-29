@@ -18,6 +18,7 @@
 	<string name="konotor_no_network_connection_toast">No network connection found</string>
 		
 	<color name="konotor_white">#FFFFFF</color>
+	<color name="konotor_overlay_color">#55555555</color>	
 	<color name="konotor_light_gray">#707070</color>
 	<color name="konotor_chat_bgcolor">#F0F0F0</color>
 	<color name="konotor_progress_start">#5eccff</color>
@@ -30,6 +31,6 @@
 	<string name="konotor_john_doe">John Doe</string>
 	<string name="konotor_upload_status">upload_status</string>
 	<string name="konotor_go">View</string>
-	
+	<dimen name="konotor_overlay_height">30dp</dimen>
     
 </resources>
